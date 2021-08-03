@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Bảng Điểm"
+        android:textColor="#FB0000"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tv_Caudung"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="Câu Đúng :"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_SumCauDung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_Caudung"
+            android:paddingBottom="10dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_cauSai"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_Caudung"
+            android:paddingBottom="10dp"
+            android:text="Câu Sai :"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_SumCauSai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_SumCauDung"
+            android:layout_toRightOf="@id/tv_cauSai"
+            android:paddingBottom="10dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_chualam"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_cauSai"
+            android:paddingBottom="10dp"
+            android:text="Câu Chưa Làm :"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_SumCauChuaLam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_cauSai"
+            android:layout_toRightOf="@id/tv_chualam"
+            android:paddingBottom="10dp"
+            android:textSize="15sp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_SumD"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_chualam"
+            android:paddingBottom="10dp"
+            android:text="Điểm :"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_SumDiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_SumCauChuaLam"
+            android:layout_toRightOf="@id/tv_SumD"
+            android:paddingBottom="10dp"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_thoat"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="300dp"
+        android:text="Thoát" />
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_margin="10dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_Cauhoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:text="sd"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/tv_Dapan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tv_Cauhoi"
+        android:padding="10dp"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#838383"
+        android:padding="10dp" />
+</RelativeLayout>

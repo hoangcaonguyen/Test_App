@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfac1"
+    tools:context=".Fragment.FragmentHome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ViewFlipper
+            android:id="@+id/Viewflipper"
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:background="#fcfac1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/toan"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@color/red"
+                    android:text="ToÁN" />
+
+                <Button
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/ly"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="#4CAF50"
+                    android:text="Lý" />
+
+                <Button
+                    android:id="@+id/hoa"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_below="@id/toan"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#4C59AF"
+                    android:text="Hóa" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

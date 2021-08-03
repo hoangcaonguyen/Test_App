@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pencils"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Mời bàn chọn mức độ !!"
+            android:textColor="@color/red"
+            android:textSize="30dp" />
+
+        <Button
+
+            android:id="@+id/level_de"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="50dp"
+            android:text="Dễ"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/level_tb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#002AFF"
+            android:text="Trung Bình"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/level_kho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/red"
+            android:text="Khó"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</FrameLayout>

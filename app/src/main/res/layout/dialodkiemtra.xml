@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Câu trả lời của bạn"
+        android:textSize="25sp" />
+
+    <GridView
+        android:id="@+id/gv_kiemtra"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:numColumns="1"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="116dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_dong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dong" />
+
+        <Button
+            android:id="@+id/bt_ketthuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="KetThuc" />
+    </LinearLayout>
+</LinearLayout>
